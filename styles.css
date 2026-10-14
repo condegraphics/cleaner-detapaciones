@@ -204,7 +204,5 @@ details p { max-width: 65ch; padding: 0 2rem 1.3rem 0; margin-bottom: 0; color: 
 }
 
 /* Sección ¿QUÉ SE TAPÓ?: fondo blanco pleno, alto +15% (medido: 510px → 586px en escritorio, 430px → 495px en móvil) */
-#problemas { position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-start; min-height: 586px; padding-top: 4rem; background: #fff; }
-#problemas::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 200px; background: url("img/agua-destapaciones-con-maquina.jpg") center bottom / cover no-repeat; opacity: .9; pointer-events: none; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 40%); mask-image: linear-gradient(to bottom, transparent, #000 40%); }
-#problemas .container { position: relative; z-index: 1; }
-@media (max-width: 640px) { #problemas { min-height: 495px; padding-top: 2.5rem; } #problemas::after { height: 130px; } }
+#problemas { display: flex; flex-direction: column; justify-content: flex-start; min-height: 586px; padding-top: 4rem; background: #fff url("img/agua-destapaciones-con-maquina.jpg") center bottom / 100% auto no-repeat; }
+@media (max-width: 640px) { #problemas { min-height: 495px; padding-top: 2.5rem; } }
