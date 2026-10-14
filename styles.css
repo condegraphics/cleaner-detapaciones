@@ -203,10 +203,6 @@ details p { max-width: 65ch; padding: 0 2rem 1.3rem 0; margin-bottom: 0; color: 
   h2, .contact-info h2 { font-size: 1.715rem; }
 }
 
-/* Sección ¿QUÉ SE TAPÓ? con imagen de fondo y textos en blanco */
-#problemas { position: relative; background: var(--navy) url("img/agua-destapaciones-con-maquina.jpg") center / cover no-repeat; }
-#problemas::before { content: ""; position: absolute; inset: 0; background: rgba(23, 37, 84, .78); }
-#problemas .container { position: relative; }
-#problemas .eyebrow-dark { color: #9fd4f7; }
-#problemas h2 { color: #fff; }
-#problemas .section-heading > p:last-child { color: rgba(255, 255, 255, .85); }
+/* Sección ¿QUÉ SE TAPÓ?: fondo blanco pleno, alto +15% (medido: 510px → 586px en escritorio, 430px → 495px en móvil) */
+#problemas { display: flex; flex-direction: column; justify-content: center; min-height: 586px; background: #fff; }
+@media (max-width: 640px) { #problemas { min-height: 495px; } }
