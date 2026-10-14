@@ -1,4 +1,6 @@
 :root {
+  --font-title: 'Merriweather Sans', Arial, sans-serif;
+  --font-body:  'Merriweather Sans', Arial, sans-serif;
   --navy:   #172554;
   --navy-2: #1E40AF;
   --blue:   #1E40AF;
@@ -19,7 +21,8 @@
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; color: var(--ink); background: var(--paper); font-family: Arial, Helvetica, sans-serif; line-height: 1.6; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--font-body); font-weight: 300; line-height: 1.6; }
+h1, h2, h3, h4, h5, h6, .main-nav, .button, .card-kicker, .eyebrow, .problem-number, .trust-grid strong { font-family: var(--font-title); }
 img { display: block; max-width: 100%; }
 a { color: inherit; }
 .container { width: min(var(--container), calc(100% - 40px)); margin-inline: auto; }
@@ -29,7 +32,7 @@ a { color: inherit; }
 .header-inner { display: flex; align-items: center; gap: 2rem; min-height: 84px; }
 .brand { width: 154px; flex: 0 0 auto; }
 .brand img { width: 100%; height: auto; }
-.main-nav { display: flex; align-items: center; justify-content: center; gap: clamp(1rem, 2.2vw, 2rem); flex: 1; font-size: .92rem; font-weight: 700; color: var(--navy); }
+.main-nav { display: flex; align-items: center; justify-content: center; gap: clamp(1rem, 2.2vw, 2rem); flex: 1; font-size: .9rem; font-weight: 700; color: var(--navy); }
 .main-nav a, .phone-link, .site-footer a { text-decoration: none; }
 .main-nav a:hover, .main-nav a:focus-visible, .phone-link:hover { color: var(--blue-mid); }
 .header-actions { display: flex; align-items: center; gap: 1rem; white-space: nowrap; }
@@ -67,9 +70,9 @@ a { color: inherit; }
 .eyebrow { margin: 0 0 1rem; color: #93C5FD; font-size: .78rem; letter-spacing: .16em; font-weight: 900; }
 .eyebrow-dark { color: var(--accent); }
 h1, h2, h3, p { margin-top: 0; }
-h1 { max-width: 760px; margin-bottom: 1.3rem; font-size: clamp(2.55rem, 5.5vw, 5.5rem); line-height: .98; letter-spacing: -.055em; }
-h2 { color: var(--navy); font-size: clamp(2.25rem, 4.3vw, 50px); line-height: 1.04; letter-spacing: -.04em; font-weight: 800; margin-bottom: 1.1rem; }
-h3 { line-height: 1.15; letter-spacing: -.025em; }
+h1 { max-width: 760px; margin-bottom: 1.3rem; font-size: clamp(2.55rem, 5.5vw, 5.5rem); line-height: .98; letter-spacing: -.04em; font-weight: 800; }
+h2 { color: var(--navy); font-size: clamp(2.25rem, 4.3vw, 50px); line-height: 1.04; letter-spacing: -.03em; font-weight: 800; margin-bottom: 1.1rem; }
+h3 { line-height: 1.2; letter-spacing: -.02em; font-weight: 700; }
 .hero-lead { max-width: 650px; margin-bottom: 1.7rem; color: rgba(255,255,255,.88); font-size: clamp(1.05rem, 1.5vw, 1.3rem); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; }
 .hero-note { margin: 1rem 0 0; color: rgba(255,255,255,.74); font-size: .92rem; }
