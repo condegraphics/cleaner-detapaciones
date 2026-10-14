@@ -206,3 +206,22 @@ details p { max-width: 65ch; padding: 0 2rem 1.3rem 0; margin-bottom: 0; color: 
 /* Sección ¿QUÉ SE TAPÓ?: fondo blanco pleno, alto +15% (medido: 510px → 586px en escritorio, 430px → 495px en móvil) */
 #problemas { display: flex; flex-direction: column; justify-content: flex-start; min-height: 586px; padding-top: 4rem; background: #fff url("img/agua-destapaciones-con-maquina.jpg") center bottom / 100% auto no-repeat; }
 @media (max-width: 640px) { #problemas { min-height: 495px; padding-top: 2.5rem; } }
+
+/* Sección Reseñas de Google: fondo blanco, tarjetas claras */
+.reviews-section { background: #fff; }
+.reviews-head { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem; margin-bottom: 2rem; }
+.google-wordmark { margin: 0; font-family: var(--font-title); font-weight: 800; font-size: 1.7rem; letter-spacing: -.02em; line-height: 1; }
+.google-wordmark span, .review-source .g-b { color: #4285F4; }
+.google-wordmark .g-r { color: #EA4335; }
+.google-wordmark .g-y { color: #FBBC04; }
+.google-wordmark .g-g { color: #34A853; }
+.review-source .g-b { font-weight: 800; }
+.reviews-title { margin: 0; font-size: 1.4rem; line-height: 1.2; letter-spacing: -.01em; font-weight: 800; color: #202124; }
+.reviews-stars, .review-stars { color: #FBBC04; letter-spacing: .08em; line-height: 1; }
+.reviews-stars { font-size: 1.1rem; }
+.review-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+.review-card { display: flex; flex-direction: column; gap: .75rem; padding: 1.4rem; background: #fafafa; border: 1px solid #ececec; border-radius: 8px; }
+.review-name { margin: 0; font-family: var(--font-title); font-weight: 800; font-size: 1rem; color: #202124; }
+.review-stars { font-size: 1rem; }
+.review-text { margin: 0; flex: 1; color: #3c4043; font-size: .95rem; line-height: 1.5; }
+.review-source { display: flex; align-items: center; gap: .5rem; margin: 0; padding-top: .9rem; border-top: 1px solid #e8e8e8; color: #5f6368; font-size: .78rem; }
