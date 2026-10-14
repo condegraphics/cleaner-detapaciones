@@ -228,3 +228,18 @@ details p { max-width: 65ch; padding: 0 2rem 1.3rem 0; margin-bottom: 0; color: 
 .reviews-link { margin-top: 2rem; }
 .coverage-layout .area-list { grid-column: 1 / -1; margin-top: 0; }
 .coverage-layout { row-gap: 2.5rem; }
+
+/* Menú móvil (desplegable nativo) y navegación de escritorio hasta 1100px */
+.mobile-nav { display: none; position: relative; }
+.mobile-nav summary { list-style: none; cursor: pointer; padding: .45rem .9rem; border: 2px solid var(--navy); border-radius: 999px; color: var(--navy); font-family: var(--font-title); font-size: .9rem; font-weight: 800; }
+.mobile-nav summary::-webkit-details-marker { display: none; }
+.mobile-panel { position: absolute; right: 0; top: calc(100% + .6rem); z-index: 20; display: grid; gap: .15rem; min-width: 240px; padding: .6rem; background: #fff; border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); }
+.mobile-panel a { padding: .7rem .8rem; border-radius: 8px; color: var(--navy); font-weight: 700; text-decoration: none; }
+.mobile-panel a:hover, .mobile-panel a:focus-visible { background: var(--blue-ice); color: var(--blue-mid); }
+.mobile-nav[open] .mobile-panel { display: grid; }
+.mobile-nav:not([open]) .mobile-panel { display: none; }
+@media (max-width: 1320px) { .main-nav { display: none; } .mobile-nav { display: block; } .header-inner { justify-content: space-between; } }
+@media (max-width: 640px) { .header-actions { gap: .45rem; } .header-actions .button-urgency { min-height: 38px; padding: .4rem .7rem; font-size: .8rem; gap: .35rem; } .mobile-nav summary { padding: .4rem .7rem; font-size: .85rem; } }
+@media (max-width: 400px) { .header-actions .button-urgency { display: none; } }
+.main-nav a { white-space: nowrap; }
+@media (min-width: 1321px) { .main-nav { gap: clamp(.7rem, 1.3vw, 1.4rem); } }
