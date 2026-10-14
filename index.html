@@ -221,10 +221,99 @@
       </div></div>
     </section>
 
-    <section class="final-cta" id="contacto"><div class="container final-cta-inner"><div><p class="eyebrow">ATENCIÓN DIRECTA</p><h2>¿Tenés una cañería tapada?</h2><p>Contanos qué instalación está afectada y dónde necesitás el servicio. Consultá disponibilidad para CABA y zonas de GBA.</p></div><div class="final-actions"><a class="button button-green" href="https://wa.me/5491165838223?text=Hola%2C%20contacto%20desde%20la%20web%20de%20Cleaner%20Destapaciones.%20Necesito%20una%20destapaci%C3%B3n.%20El problema es%3A%20%5Bdescribir%5D.%20Estoy%20en%3A%20%5Bzona%5D.">Escribir por WhatsApp</a><a class="button button-outline" href="tel:+541165838223">Llamar al 11 6583-8223</a></div></div></section>
+    <section class="contact-section" id="contacto">
+      <div class="container contact-layout">
+        <div class="contact-info">
+          <p class="contact-badge">PRESUPUESTO ONLINE</p>
+          <h2>¿Tenés una consulta o querés coordinar un turno?</h2>
+          <p class="contact-intro">Completá el formulario para solicitar un presupuesto sin cargo o coordinar una visita técnica no urgente. Si tenés una emergencia activa de agua o cloaca, te aconsejamos comunicarte directamente por WhatsApp.</p>
+          <ul class="contact-items">
+            <li>
+              <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+              <div><small>Llamadas y urgencias</small><a href="tel:+541165838223">11 6583-8223</a></div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg></span>
+              <div><small>Atención WhatsApp</small><a href="https://wa.me/5491165838223">11 6583-8223</a></div>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span>
+              <div><small>Correo electrónico</small><a href="mailto:info@cleanerdestapaciones.com.ar">info@cleanerdestapaciones.com.ar</a></div>
+            </li>
+          </ul>
+          <p class="contact-note">Atención en CABA y zonas de GBA. Consultá disponibilidad para tu caso.</p>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <h3>Solicitar presupuesto gratis</h3>
+          <label>Nombre y apellido
+            <span class="field">
+              <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+              <input type="text" name="nombre" placeholder="Ej: Carlos Pérez" autocomplete="name" required>
+            </span>
+          </label>
+          <label>Teléfono / celular
+            <span class="field">
+              <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+              <input type="tel" name="telefono" placeholder="Ej: 11 1234-5678" autocomplete="tel" required>
+            </span>
+          </label>
+          <label>Barrio o localidad
+            <span class="field">
+              <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <input type="text" name="zona" placeholder="Ej: San Cristóbal o Lanús" required>
+            </span>
+          </label>
+          <label>¿Qué necesita solucionar?
+            <span class="field">
+              <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+              <select name="servicio" required>
+                <option value="" selected disabled>Seleccione el tipo de problema</option>
+                <option>Desobstrucción de cañerías</option>
+                <option>Cloacas</option>
+                <option>Baño o inodoro</option>
+                <option>Cocina o lavadero</option>
+                <option>Pluviales, patios o terrazas</option>
+                <option>Columnas o cámaras</option>
+                <option>Consorcio o empresa</option>
+                <option>Otro</option>
+              </select>
+            </span>
+          </label>
+          <label>Breve descripción del problema
+            <textarea name="descripcion" rows="4" placeholder="Detallá el inconveniente para darte un presupuesto más preciso..."></textarea>
+          </label>
+          <button class="button button-dark contact-submit" type="submit">Enviar solicitud
+            <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="final-cta" id="cta-final"><div class="container final-cta-inner"><div><p class="eyebrow">ATENCIÓN DIRECTA</p><h2>¿Tenés una cañería tapada?</h2><p>Contanos qué instalación está afectada y dónde necesitás el servicio. Consultá disponibilidad para CABA y zonas de GBA.</p></div><div class="final-actions"><a class="button button-green" href="https://wa.me/5491165838223?text=Hola%2C%20contacto%20desde%20la%20web%20de%20Cleaner%20Destapaciones.%20Necesito%20una%20destapaci%C3%B3n.%20El problema es%3A%20%5Bdescribir%5D.%20Estoy%20en%3A%20%5Bzona%5D.">Escribir por WhatsApp</a><a class="button button-outline" href="tel:+541165838223">Llamar al 11 6583-8223</a></div></div></section>
   </main>
 
   <footer class="site-footer"><div class="container footer-grid"><div><img src="img/logo-destapaciones-capiltal-federal-blanco.png" width="180" height="73" alt="Cleaner Destapaciones"><p>Destapaciones y desobstrucción de cañerías con máquina profesional.</p></div><div><h2>Contacto</h2><address><a href="tel:+541165838223">11 6583-8223</a><a href="mailto:info@cleanerdestapaciones.com.ar">info@cleanerdestapaciones.com.ar</a><span>CABA y zonas de GBA</span></address></div><div><h2>Servicios</h2><a href="#servicios">Destapaciones de cañerías</a><a href="#servicios">Destapaciones de cloacas</a><a href="#servicios">Destapaciones pluviales</a><a href="#consorcios">Consorcios y empresas</a></div></div><div class="container footer-bottom"><span>© Cleaner Destapaciones</span><span>Consultas directas por WhatsApp y teléfono</span></div></footer>
   <div class="mobile-bar"><a href="tel:+541165838223">Llamar</a><a href="https://wa.me/5491165838223?text=Hola%2C%20contacto%20desde%20la%20web%20de%20Cleaner%20Destapaciones.%20Necesito%20una%20destapaci%C3%B3n.%20Estoy%20en%3A%20%5Bzona%5D.">WhatsApp</a></div>
+  <script>
+    (function () {
+      var form = document.getElementById('contact-form');
+      if (!form) return;
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        var data = new FormData(form);
+        var message = [
+          'Hola, quiero solicitar un presupuesto desde la web de Cleaner Destapaciones.',
+          '',
+          'Nombre y apellido: ' + data.get('nombre'),
+          'Teléfono / celular: ' + data.get('telefono'),
+          'Barrio o localidad: ' + data.get('zona'),
+          'Qué necesita solucionar: ' + data.get('servicio'),
+          'Descripción: ' + (data.get('descripcion') || 'Sin descripción')
+        ].join('\n');
+        window.open('https://wa.me/5491165838223?text=' + encodeURIComponent(message), '_blank', 'noopener');
+      });
+    })();
+  </script>
 </body>
 </html>
