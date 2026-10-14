@@ -124,6 +124,7 @@ h3 { line-height: 1.2; letter-spacing: -.02em; font-weight: 700; }
 .equipment-copy { align-self: center; padding: clamp(3rem, 7vw, 7rem); }
 .equipment-copy h2 { max-width: 580px; color: #fff; }
 .equipment-copy p:not(.eyebrow) { max-width: 58ch; color: rgba(255,255,255,.78); }
+.equipment-copy p.equipment-lead { color: #fff; font-size: 1.2rem; font-weight: 700; }
 .light-link { display: inline-block; margin-top: 1rem; color: var(--blue-mid); }
 .area-list { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.8rem; }
 .area-list span { padding: .55rem .85rem; border: 1px solid var(--blue-pale); border-radius: 999px; color: var(--navy); background: var(--white); font-size: .88rem; font-weight: 700; }
