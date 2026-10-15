@@ -246,3 +246,6 @@ details p { max-width: 65ch; padding: 0 2rem 1.3rem 0; margin-bottom: 0; color: 
 /* Anclas: las secciones no quedan debajo del encabezado fijo */
 section[id] { scroll-margin-top: 90px; }
 @media (max-width: 640px) { section[id] { scroll-margin-top: 76px; } }
+.footer-bottom { justify-content: flex-start; }
+.footer-credit { margin: 0; font-family: 'Montserrat', Arial, sans-serif; font-size: 10px; line-height: 1.5; letter-spacing: .02em; color: rgba(255,255,255,.7); }
+.footer-credit a { color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
