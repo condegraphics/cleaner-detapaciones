@@ -48,15 +48,9 @@
         <a href="#preguntas">Preguntas Frecuentes</a>
         <a href="#contacto">Contacto</a>
       </nav>
-      <details class="mobile-nav">
-        <summary>Menú</summary>
-        <nav class="mobile-panel" aria-label="Menú móvil">
-          <a href="#inicio">HOME</a>
-          <a href="#servicios">Servicios</a>
-          <a href="#quienes-somos">Quiénes somos</a>
-          <a href="#preguntas">Preguntas Frecuentes</a>
-        </nav>
-      </details>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
       <div class="header-actions">
         <a class="button button-small button-outline-navy btn-presupuesto" href="#contacto">Presupuesto</a>
         <a class="button button-small button-urgency" href="https://wa.me/5491165838223?text=Hola%2C%20contacto%20desde%20la%20web%20de%20Cleaner%20Destapaciones.%20Necesito%20una%20destapaci%C3%B3n%20urgente.%20Estoy%20en%3A%20%5Bzona%5D.%20El%20problema%20es%3A%20%5Bdescribir%5D.">
@@ -66,6 +60,26 @@
       </div>
     </div>
   </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mm-top">
+      <a class="brand" href="#inicio" aria-label="Cleaner Destapaciones, inicio"><img src="img/logo-destapaciones-capiltal-federal-blanco.png" width="180" height="73" alt="Cleaner Destapaciones"></a>
+      <button class="mm-close" type="button" aria-label="Cerrar menú"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+    <nav class="mm-nav" aria-label="Menú móvil">
+      <ul>
+            <li><a href="#inicio">Home<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li>
+            <li><a href="#servicios">Servicios<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li>
+            <li><a href="#quienes-somos">Quiénes somos<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li>
+            <li><a href="#preguntas">Preguntas frecuentes<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li>
+            <li><a href="#contacto">Contacto<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a></li>
+      </ul>
+    </nav>
+    <div class="mm-foot">
+      <a class="mm-mail" href="mailto:info@cleanerdestapaciones.com.ar">info@cleanerdestapaciones.com.ar<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+      <a class="mm-cta" href="#contacto">Pedí tu presupuesto</a>
+    </div>
+  </div>
 
   <main id="contenido">
     <section class="hero" id="inicio">
@@ -361,6 +375,25 @@
         ].join('\n');
         window.open('https://wa.me/5491165838223?text=' + encodeURIComponent(message), '_blank', 'noopener');
       });
+    })();
+  </script>
+  <script>
+    (function () {
+      var toggle = document.querySelector('.menu-toggle');
+      var menu = document.getElementById('mobile-menu');
+      if (!toggle || !menu) return;
+      var closeBtn = menu.querySelector('.mm-close');
+      function setMenu(open) {
+        menu.classList.toggle('is-open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+        document.documentElement.classList.toggle('menu-open', open);
+        (open ? closeBtn : toggle).focus();
+      }
+      toggle.addEventListener('click', function () { setMenu(!menu.classList.contains('is-open')); });
+      closeBtn.addEventListener('click', function () { setMenu(false); });
+      menu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && menu.classList.contains('is-open')) setMenu(false); });
     })();
   </script>
 </body>
