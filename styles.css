@@ -191,10 +191,9 @@ details p { max-width: 65ch; padding: 0 2rem 1.3rem 0; margin-bottom: 0; color: 
 .contact-submit svg { flex-shrink: 0; }
 @media (max-width: 900px) { .contact-layout { grid-template-columns: 1fr; } }
 
-/* Móvil: el hero muestra solo el eyebrow y el H1, sin imagen de fondo ni botones */
+/* Móvil: conserva la imagen de fondo y muestra solo el eyebrow y el H1 */
 @media (max-width: 640px) {
-  .hero-image, .hero-overlay, .hero-lead, .hero-actions, .hero-note { display: none; }
-  .hero { min-height: 0; }
+  .hero-lead, .hero-actions, .hero-note { display: none; }
   .hero-content { padding-block: 3rem; }
 }
 
