@@ -74,7 +74,7 @@ h1 { max-width: 760px; margin-bottom: 1.3rem; font-size: 70px; line-height: 1.12
 h2 { color: var(--navy); font-size: clamp(2.25rem, 4.3vw, 50px); line-height: 1.196; letter-spacing: -.03em; font-weight: 800; margin-bottom: 1.1rem; }
 h3 { line-height: 1.2; letter-spacing: -.02em; font-weight: 700; }
 .hero-lead { max-width: 650px; margin-bottom: 1.7rem; color: #fff; font-size: clamp(1.05rem, 1.5vw, 1.3rem); }
-.hero-lead span { padding: .12em .28em .18em; background: rgba(11, 21, 48, .88); -webkit-box-decoration-break: clone; box-decoration-break: clone; line-height: 1.9; }
+.hero-lead span { padding: .28em .42em .32em; background: rgba(11, 21, 48, .88); -webkit-box-decoration-break: clone; box-decoration-break: clone; line-height: 2; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; }
 .hero-note { margin: 1rem 0 0; color: rgba(255,255,255,.74); font-size: .92rem; }
 .trust-bar { background: var(--navy-2); color: #fff; }
