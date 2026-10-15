@@ -238,11 +238,11 @@ details p { max-width: 65ch; padding: 0 2rem 1.3rem 0; margin-bottom: 0; color: 
 .mobile-panel a:hover, .mobile-panel a:focus-visible { background: var(--blue-ice); color: var(--blue-mid); }
 .mobile-nav[open] .mobile-panel { display: grid; }
 .mobile-nav:not([open]) .mobile-panel { display: none; }
-@media (max-width: 1320px) { .main-nav { display: none; } .mobile-nav { display: block; } .header-inner { justify-content: space-between; } }
+@media (max-width: 1400px) { .main-nav { display: none; } .mobile-nav { display: block; } .header-inner { justify-content: space-between; } }
 @media (max-width: 640px) { .header-actions { gap: .45rem; } .header-actions .button-urgency { min-height: 38px; padding: .4rem .7rem; font-size: .8rem; gap: .35rem; } .mobile-nav summary { padding: .4rem .7rem; font-size: .85rem; } }
 @media (max-width: 400px) { .header-actions .button-urgency { display: none; } }
 .main-nav a { white-space: nowrap; }
-@media (min-width: 1321px) { .main-nav { gap: clamp(.7rem, 1.3vw, 1.4rem); } }
+@media (min-width: 1401px) { .main-nav { gap: clamp(.7rem, 1.3vw, 1.4rem); } }
 /* Anclas: las secciones no quedan debajo del encabezado fijo */
 section[id] { scroll-margin-top: 90px; }
 @media (max-width: 640px) { section[id] { scroll-margin-top: 76px; } }
@@ -252,3 +252,5 @@ section[id] { scroll-margin-top: 90px; }
 .footer-credit { text-transform: uppercase; font-weight: 400; }
 .footer-credit a { color: inherit; font-weight: 400; text-decoration: none; }
 .footer-credit a:hover, .footer-credit a:focus-visible { text-decoration: underline; }
+.main-nav { justify-content: flex-end; }
+.main-nav a, .mobile-panel a { text-transform: uppercase; }
