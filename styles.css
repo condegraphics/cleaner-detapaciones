@@ -28,7 +28,7 @@ a { color: inherit; }
 .container { width: min(var(--container), calc(100% - 40px)); margin-inline: auto; }
 .skip-link { position: absolute; left: 1rem; top: -5rem; z-index: 20; padding: .7rem 1rem; background: var(--accent); color: #fff; font-weight: 700; border-radius: 0 0 8px 8px; }
 .skip-link:focus { top: 0; }
-.site-header { position: relative; z-index: 5; background: var(--white); border-bottom: 1px solid var(--line); }
+.site-header { position: sticky; top: 0; z-index: 50; background: var(--white); border-bottom: 1px solid var(--line); }
 .header-inner { display: flex; align-items: center; gap: 2rem; min-height: 84px; }
 .brand { width: 154px; flex: 0 0 auto; }
 .brand img { width: 100%; height: auto; }
@@ -243,3 +243,6 @@ details p { max-width: 65ch; padding: 0 2rem 1.3rem 0; margin-bottom: 0; color: 
 @media (max-width: 400px) { .header-actions .button-urgency { display: none; } }
 .main-nav a { white-space: nowrap; }
 @media (min-width: 1321px) { .main-nav { gap: clamp(.7rem, 1.3vw, 1.4rem); } }
+/* Anclas: las secciones no quedan debajo del encabezado fijo */
+section[id] { scroll-margin-top: 90px; }
+@media (max-width: 640px) { section[id] { scroll-margin-top: 76px; } }
